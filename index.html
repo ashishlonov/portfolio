@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="portfolio, Alexander Shishlonov, ashishlonov">
+    <title>Alexander Shishlonov</title>
+    <link rel="icon" type="image/png" href="./img/ASlight.png" id="favicon-light" class="theme-icon">
+    <link rel="icon" type="image/png" href="./img/ASdark.png" id="favicon-dark" class="theme-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="light" data-lang="ru">
+    <header>
+        <nav>
+            <div class="nav-links">
+                <a href="#about" data-translate="nav.about">О себе</a>
+                <a href="#skills" data-translate="nav.skills">Навыки</a>
+                <a href="#experience" data-translate="nav.experience">Опыт</a>
+                <a href="#projects" data-translate="nav.projects">Проекты</a>
+                <a href="#contact" data-translate="nav.contact">Контакты</a>
+            </div>
+            <div class="controls">
+                <button class="lang-toggle" onclick="toggleLanguage()">EN</button>
+                <button class="theme-toggle" onclick="toggleTheme()">Темная</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="hero" id="about">
+            <div class="hero-content">
+                <h1 data-translate="hero.name">Шишлонов Александр</h1>
+                <h2 data-translate="hero.title">Backend Java Developer</h2>
+                <p data-translate="hero.description">Постоянно учусь и внедряю лучшие практики в свои проекты.</p>
+            </div>
+            <div class="hero-image">
+                <img src="./img/avatarL.png" alt="Profile Photo" class="avatar avatar-light">
+                <img src="./img/avatartD.png" alt="Profile Photo" class="avatar avatar-dark">
+            </div>
+        </section>
+        <div class="info-grid">
+            <div class="info-item">
+                <h3 data-translate="info.age">Возраст</h3>
+                <p id="age"></p>
+            </div>
+            <div class="info-item">
+                <h3 data-translate="info.location">Местоположение</h3>
+                <p data-translate="info.locationValue">Россия, Саранск</p>
+            </div>
+            <div class="info-item">
+                <h3 data-translate="info.education">Образование</h3>
+                <p data-translate="info.educationValue">МГУ им. Н.П.Огарёва</p>
+                <p data-translate="info.educationLevel">Бакалавриат - 4 курс</p>
+            </div>
+            <div class="info-item">
+                <h3 data-translate="info.experience">Опыт</h3>
+                <p data-translate="info.experienceValue">Пока только прохождение практик и pet-проекты</p>
+            </div>
+        </div>
+
+        <section class="section" id="skills">
+            <h2 class="section-title" data-translate="skills.title">Технические навыки</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 data-translate="skills.backend">Backend</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span data-translate="skills.java">Java</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span data-translate="skills.spring">Spring Boot</span>
+                            <span>25%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 25%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span data-translate="skills.postgres">PostgreSQL</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-translate="skills.tools">Инструменты</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span data-translate="skills.docker">Docker</span>
+                            <span>15%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 15%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span data-translate="skills.git">Git</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span data-translate="skills.kubernetes">Kubernetes</span>
+                            <span>1%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 1%"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 data-translate="skills.soft">Soft Skills</h3>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span data-translate="skills.teamwork">Командная работа</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 50%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span data-translate="skills.problemSolving">Решение проблем</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 60%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span data-translate="skills.communication">Общение</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-name">
+                            <span data-translate="skills.hardWork">Трудолюбие</span>
+                            <span>100%</span>
+                        </div>
+                        <div class="skill-bar">
+                            <div class="skill-progress" style="width: 100%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <h2 class="section-title" data-translate="experience.title">Опыт</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <h3 data-translate="experience.sdetTitle">SDET - практика</h3>
+                    <p data-translate="experience.sdetDescription">Автоматизация интеграционного тестирования CI/CD-пайплайнов.</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2024</div>
+                    <h3 data-translate="experience.backendTitle">Backend - практика</h3>
+                    <p data-translate="experience.backendDescription">Разработка микросервисной архитектуры на Spring Boot для приложения "доска объявлений".</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="events">
+            <h2 class="section-title" data-translate="events.title">Участие в мероприятиях</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <h3 data-translate="events.event1Title">IV всероссийская школа НЦФМ и ИТМФ по математическому моделированию на супер-ЭВМ эска- и зеттафлопсной производительности</h3>
+                    <p data-translate="events.event1Description">Выступал с докладом "Применение схемы "кабаре" для моделирования динамики двухфазных гравитирующих сред".</p>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-date">2025</div>
+                    <h3 data-translate="events.event2Title">LIV Огарёвские чтения</h3>
+                    <p data-translate="events.event2Description">Агентное моделирование процесса обслуживания точек питания (Java).</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <h2 class="section-title" data-translate="projects.title">Pet-проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3 data-translate="projects.projectTitle">Идет разработка онлайн-игры</h3>
+                        <div class="project-tags">
+                            <span class="tag" data-translate="skills.java">Java</span>
+                            <span class="tag" data-translate="skills.spring">Spring Boot</span>
+                            <span class="tag" data-translate="skills.postgres">PostgreSQL</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag" data-translate="skills.docker">Docker</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2 class="section-title" data-translate="contact.title">Контакты</h2>
+            <div class="social-links">
+                <a href="https://t.me/ashishlonov" class="social-link" target="_blank">
+                    <img src="./img/telegram.svg" class="social-icon">
+                    <span>Telegram</span>
+                </a>
+                <a href="https://github.com/ashishlonov" class="social-link" target="_blank">
+                    <img src="./img/github.svg" class="social-icon">
+                    <span>GitHub</span>
+                </a>
+                <a href="mailto:sashashishlonov@gmail.com" class="social-link" target="_blank">
+                    <img src="./img/google.svg" class="social-icon">
+                    <span>Email</span>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p data-translate="footer">∫ 2025 Шишлонов Александр</p>
+    </footer>
+
+    <script src="./index.js"></script>
+</body>
+</html>
